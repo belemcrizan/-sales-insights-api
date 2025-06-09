@@ -10,6 +10,9 @@ from app.database import engine, SessionLocal
 from app import models
 from app.langchain_service import SalesAnalyzer
 from pydantic import BaseModel
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
